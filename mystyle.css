@@ -116,7 +116,7 @@ content, aside
 content
 {
     background: url('img/web/back_with.png');
-	flex: 8;
+	flex: 4;
     position: relative;
     background-color: #FFFFFF;
     box-shadow: 0px 2px 5px #1c1a19;
@@ -193,7 +193,7 @@ footer h1
 }
 
 
-#tweet
+#contact
 {
     width: 28%;
 }
@@ -210,7 +210,6 @@ footer h1
 
 #mes_photos img
 {
-    border: 1px solid #181818;
     margin-right: 2px;
 }
 
@@ -243,4 +242,24 @@ footer h1
 #Global #droite {
     width:50%; 
 	margin-left: 10px;	
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+	margin-left:20%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+input
+{
+	text-align:center;
+	height: 25px;
+	width: 300px;
 }

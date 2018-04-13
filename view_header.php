@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 	<head>
@@ -21,10 +24,9 @@
                 
                 <nav>
                     <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Pokedex</a></li>
-                        <li><a href="#">Equipe</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/pokedeck/">Accueil</a></li>
+                        <li><a href="/pokedeck/pokedex.php">Pokedex</a></li>
+                        <li><a href="/pokedeck/team.php">Equipe</a></li>
                     </ul>
                 </nav>
             </header>

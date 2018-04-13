@@ -1,5 +1,5 @@
 <?php
-include("header.php");
+include("view_header.php");
 ?>
 
 <section style="margin-top:15px">

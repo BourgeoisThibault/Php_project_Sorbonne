@@ -4,7 +4,7 @@ if(!isset($_GET['num'])) {
     header('Location: error.php?motif=Aucun ID trouvé');
 }
 
-include("header.php");
+include("view_header.php");
 
 try
 {
@@ -97,11 +97,11 @@ if(empty($donnees)){
 					
                 </content>
 				
-				<?php include("user_space.php");?>
+				<?php include("view_user_space.php");?>
             </section>
             
 <?php
 $reponse->closeCursor(); // Termine le traitement de la requête
 
-include("footer.php");
+include("view_footer.php");
 ?>

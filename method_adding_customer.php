@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 try
 {
 	$bdd = new PDO('mysql:host=localhost;dbname=pokedek;charset=utf8', 'esibank', 'esibankpds');
@@ -21,6 +23,11 @@ $stmt->bindParam(':password', $_POST['password']);
 $stmt->bindParam(':naissance', $_POST['naissance']);
 
 $stmt->execute();
+
+$_SESSION['my'] = true;
+$_SESSION['nom'] = 'toto';
+
+header('Location: index.php');
 
 ?>
 
