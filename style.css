@@ -1,0 +1,59 @@
+/* Création de nouvelles polices */
+@font-face {
+  font-family: 'Pokemon Solid'
+  src: url('Pokemon Solid.ttf');
+}
+
+/* Titres */
+h1
+{
+  font-family: 'Pokemon Solid';
+  text-align: center;
+  font-size: 5.5em;
+}
+
+h2
+{
+  font-family: 'American Typewriter';
+  font-size: 1.8em;
+}
+
+
+h3
+{
+  font-family: 'American Typewriter';
+  font-size: 1.8em;
+}
+
+/* Paragraphes */
+p
+{
+  text-align: justify;
+  font-family:'Avenir'
+  width: 350px;
+  border: 1px solid black;
+  text-align: justify;
+  padding: 12px;
+  margin: 50px;
+}
+
+
+/* Background */
+body
+{
+  background: url("pikachu.png") no-repeat top right, url("fond.jpg") fixed;
+  font-family: 'Avenir';
+}
+
+nav
+{
+  float: left;
+  width: 150px;
+  border: 1px solid black;
+  position: fixed;
+}
+
+section
+{
+  margin-left: 200px;
+}
