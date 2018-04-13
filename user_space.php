@@ -17,6 +17,8 @@
 			<br/>
 			<br/>
 			<a href="#"> Mot de passe perdu? </a>
+			</br>
+			<a href="#"> Inscription </a>
 			<br/>
 			<br/>
 		</fieldset>

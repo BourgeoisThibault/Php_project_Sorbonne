@@ -1,34 +1,15 @@
 /* Définition des polices personnalisées */
 
-@font-face
-{
-    font-family: 'BallparkWeiner';
-    src: url('polices/ballpark.eot');
-    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
-         url('polices/ballpark.woff') format('woff'),
-         url('polices/ballpark.ttf') format('truetype'),
-         url('polices/ballpark.svg#BallparkWeiner') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face
-{
-    font-family: 'Dayrom';
-    src: url('polices/dayrom.eot');
-    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
-         url('polices/dayrom.woff') format('woff'),
-         url('polices/dayrom.ttf') format('truetype'),
-         url('polices/dayrom.svg#Dayrom') format('svg');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'Pokemon'
+  src: url('Pokemon_Solid.ttf');
 }
 
 /* Eléments principaux de la page */
 
 body
 {
-    background: url('images/fond_jaune.png');
+    background: url('img/web/fond_jaune.png');
     background-repeat: repeat-x repeat-y;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: black;
@@ -51,7 +32,7 @@ section h1, footer h1, nav a
 
 header
 {
-    background: url('images/separateur.png') repeat-x bottom;
+    background: url('img/web/separateur.png') repeat-x bottom;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -78,7 +59,7 @@ header
 
 header h1
 {
-    font-family: 'BallparkWeiner', serif;
+    font-family: 'Pokemon', serif;
     font-size: 2.5em;
     font-weight: normal;
     margin: 0 0 0 10px;
@@ -134,7 +115,7 @@ content, aside
 
 content
 {
-    background: url('images/back_with.png');
+    background: url('img/web/back_with.png');
 	flex: 8;
     position: relative;
     background-color: #FFFFFF;
@@ -153,12 +134,12 @@ content
 
 content p
 {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 aside
 {
-    background: url('images/back_with.png');
+    background: url('img/web/back_with.png');
     flex: 1.2;
     position: relative;
     background-color: #706b64;
@@ -197,7 +178,7 @@ aside img
 footer
 {
     display: flex;
-    background:  url('images/separateur.png') repeat-x top;
+    background:  url('img/web/separateur.png') repeat-x top;
     padding-top: 25px;
 }
 
@@ -242,7 +223,7 @@ footer h1
 
 #mes_amis ul
 {
-    list-style-image: url('images/ico_liensexterne.png');
+    list-style-image: url('img/web/ico_liensexterne.png');
     padding-left: 2px;
 }
 
@@ -252,10 +233,14 @@ footer h1
     color: #760001;
 }
 
+#Global {
+	display: flex;
+}
+
 #Global #gauche {
-    float:left;
-    width:200px;
+    width:50%;
 }
 #Global #droite {
-    margin-left:210px;   
+    width:50%; 
+	margin-left: 10px;	
 }

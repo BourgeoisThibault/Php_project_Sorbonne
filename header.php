@@ -11,10 +11,12 @@
 	<div id="bloc_page">
             <header>
                 <div id="titre_principal">
+					<a href="/pokedeck" style="text-decoration:none; color:black">
                     <div id="logo">
                         <img src="pikachu.png" alt="Logo du projet" />
                         <h1>Pokedeck</h1>    
                     </div>
+					</a>
                 </div>
                 
                 <nav>
