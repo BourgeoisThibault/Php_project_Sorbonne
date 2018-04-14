@@ -8,7 +8,8 @@ try
 }
 catch (Exception $e)
 {
-	die('Erreur : ' . $e->getMessage());
+	header('Location: error.php?motif=Problème connexion BDD');
+	exit();
 }
 
 echo $_POST['nom'];

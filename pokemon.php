@@ -2,17 +2,19 @@
 
 if(!isset($_GET['num'])) {
     header('Location: error.php?motif=Aucun ID trouvé');
+	exit();
 }
 
 include("view_header.php");
 
 try
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=pokedek;charset=utf8', 'esibank', 'esibankpds');
+	$bdd = new PDO('mysql:host=localhost;dbname=pokedek;charset=utf8', 'root', '');
 }
 catch (Exception $e)
 {
     header('Location: error.php?motif=Problème connexion BDD');
+	exit();
 }
 
 // On récupère tout le contenu de la table jeux_video
@@ -23,6 +25,7 @@ $donnees = $reponse->fetch();
 
 if(empty($donnees)){
     header('Location: error.php?motif=Aucun POKEMON avec un id '.$_GET["num"].' trouvé');
+	exit();
 }
 
 ?>

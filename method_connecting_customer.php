@@ -8,7 +8,8 @@ try
 }
 catch (Exception $e)
 {
-	die('Erreur : ' . $e->getMessage());
+	header('Location: error.php?motif=Problème connexion BDD');
+	exit();
 }
 
 $reponse = $bdd->query("SELECT * FROM users WHERE pseudo = '".$_POST['pseudo']."' AND password = '".$_POST['password']."'");

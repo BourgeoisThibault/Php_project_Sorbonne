@@ -8,6 +8,7 @@ try
 catch (Exception $e)
 {
     header('Location: error.php?motif=Problème connexion BDD');
+	exit();
 }
 
 // On récupère tout le contenu de la table jeux_video

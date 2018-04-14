@@ -42,7 +42,7 @@ catch (Exception $e)
 							<td><img src="img/card/<?php echo $donnees['id'];?>.png" height="75px" width="auto"/></td>
 						</tr>
 						<?php
-												$reponse->closeCursor(); // Termine le traitement de la requête
+						$reponse->closeCursor(); // Termine le traitement de la requête
 						}
 						?>
 					</table>

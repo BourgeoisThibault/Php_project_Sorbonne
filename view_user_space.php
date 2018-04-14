@@ -21,8 +21,6 @@ if(!isset($_SESSION['connected'])) {
 			<input type="submit" value="Connexion" />
 			<br/>
 			<br/>
-			<a href="#"> Mot de passe perdu? </a>
-			</br>
 			<a href="/pokedeck/form_sign.php"> Inscription </a>
 			<br/>
 			<br/>

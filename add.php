@@ -19,7 +19,8 @@ try
 }
 catch (Exception $e)
 {
-	die('Erreur : ' . $e->getMessage());
+	header('Location: error.php?motif=Problème connexion BDD');
+	exit();
 }
 
 $reponse = $bdd->query("SELECT * FROM pokemon WHERE id = ".$_GET['num']);
