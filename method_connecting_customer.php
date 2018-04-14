@@ -19,6 +19,11 @@ $donnees = $reponse->fetch();
 if(empty($donnees)){
     header('Location: delete_session.php');
 }else{
+	
+	if (!isset($_SESSION['panier'])){
+      $_SESSION['panier']=array();
+   }
+	
 	$_SESSION['connected'] = true;
 	$_SESSION['nom'] = $donnees['nom'];
 	$_SESSION['prenom'] = $donnees['prenom'];

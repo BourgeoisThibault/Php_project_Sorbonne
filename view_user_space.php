@@ -53,6 +53,10 @@ if(!isset($_SESSION['connected'])) {
 		<br/>
 		<p style="font-size:25px"><strong><?php echo $_SESSION['pseudo'] ;?></strong></p>
 		<br/>
+		<label><u>Panier</u></label>
+		<br/>
+		<p><strong><?php echo count($_SESSION['panier'])." Pokemon" ;?></strong></p>
+		<br/>
 		<a href="/pokedeck/delete_session.php">Deconnexion</a>
 		<br/>
 		<br/>

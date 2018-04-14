@@ -29,7 +29,15 @@ if(empty($donnees)){
 
             <section style="margin-top:15px">
                 <content>
-                    <h1 style="text-align:center; font-size:30px"><strong><?php echo $donnees['nom'] ;?></strong></h1>
+                    <h1 style="text-align:center; font-size:30px">
+					<a href="/pokedeck/pokemon?num=<?php echo $_GET['num']-1;?>">
+					<img src="img/web/previous.png" height="30px" width="auto"/>
+					</a>
+					<strong> <?php echo $donnees['nom'] ;?> </strong>
+					<a href="/pokedeck/pokemon?num=<?php echo $_GET['num']+1;?>">
+					<img src="img/web/next.png" height="30px" width="auto"/>
+					</a>
+					</h1>
 					
 					<div id="Global" style="text-align:center">
 						<div id="gauche">
@@ -94,6 +102,13 @@ if(empty($donnees)){
 							}
 						?>
 					</div>
+					
+					
+					<h1 style="text-align:center">
+					<a href="/pokedeck/add?num=<?php echo $_GET['num'];?>">
+					<img src="img/web/add.png" height="75px" width="auto"/>
+					</a>
+					</h1>
 					
                 </content>
 				

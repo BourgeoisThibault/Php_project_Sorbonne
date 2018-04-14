@@ -27,6 +27,7 @@ session_start();
                         <li><a href="/pokedeck/">Accueil</a></li>
                         <li><a href="/pokedeck/pokedex.php">Pokedex</a></li>
                         <li><a href="/pokedeck/team.php">Equipe</a></li>
+                        <li><a href="/pokedeck/panier.php">Panier</a></li>
                     </ul>
                 </nav>
             </header>
