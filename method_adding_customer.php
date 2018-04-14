@@ -25,8 +25,17 @@ $stmt->bindParam(':naissance', $_POST['naissance']);
 
 $stmt->execute();
 
-$_SESSION['my'] = true;
-$_SESSION['nom'] = 'toto';
+if (!isset($_SESSION['panier'])){
+      $_SESSION['panier']=array();
+   }
+	
+	$_SESSION['connected'] = true;
+	$_SESSION['nom'] = $_POST['nom'];
+	$_SESSION['prenom'] = $_POST['prenom'];
+	$_SESSION['pseudo'] = $_POST['pseudo'];
+	$_SESSION['mail'] = $_POST['mail'];
+	$_SESSION['naissance'] = $_POST['naissance'];
+	header('Location: index.php');
 
 header('Location: index.php');
 
